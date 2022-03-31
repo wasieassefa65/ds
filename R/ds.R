@@ -15,7 +15,7 @@ ds<-function(x){
   hist(x, col = rainbow(30))
  # boxpot
   boxplot(x, col = "green")
-   par(mfrow = col(1,1))
+   par(mfrow = c(1,1))
   ## numeric summary 
   data.frame(mean = mean(x),
             min = min(x),
