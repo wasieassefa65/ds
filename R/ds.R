@@ -14,7 +14,7 @@ ds<-function(x){
 # histogram
   hist(x, col = rainbow(30))
  # boxpot
-  boxplot(x, col = ("green"))
+  boxplot(x, col = "green")
    par(mfrow = col(1,1))
   ## numeric summary 
   data.frame(mean = mean(x),
