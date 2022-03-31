@@ -14,10 +14,14 @@ ds<-function(x){
 
 # histogram
   hist(x,col=("red"))
-
  # boxpot
-
-  par(mfrow=col(1,1))
-
   boxplot(x,col=("green"))
+   par(mfrow=col(1,1))
+  ## numeric summary 
+  
+  data.frame(mean=mean(x),
+            min=min(x),
+            max=max(x),
+            sd=sd(x),
+        vaince= variance(x))
 }
